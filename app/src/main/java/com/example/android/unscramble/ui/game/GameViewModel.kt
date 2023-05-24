@@ -64,11 +64,6 @@ class GameViewModel: ViewModel() {
         getNextWord()
     }
 
-    override fun onCleared() {
-        super.onCleared()
-        Log.d("GameFragment", "GameViewModel destroyed!")
-    }
-
     private fun increaseScore() {
         _score.value = (_score.value)?.plus(SCORE_INCREASE)
     }
